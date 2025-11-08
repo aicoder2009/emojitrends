@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Trends - Internet Museum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Emoji Trends</h1>
+            <p class="subtitle">An interactive journey through emoji punctuation history</p>
+        </header>
+
+        <section class="timeline-section">
+            <h2>Timeline Explorer</h2>
+            <div class="timeline-container">
+                <div class="timeline-labels">
+                    <span>2010</span>
+                    <span>2015</span>
+                    <span>2020</span>
+                    <span>2025</span>
+                </div>
+                <input type="range" id="timeline-slider" min="2010" max="2025" value="2025" step="1">
+                <div class="current-year" id="current-year">2025</div>
+            </div>
+        </section>
+
+        <section class="trends-display">
+            <h2>Popular Emoji Punctuation</h2>
+            <div class="emoji-grid" id="emoji-grid">
+                <!-- Emoji items will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>Trend Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-usage">0</div>
+                    <div class="stat-label">Total Usage (Billions)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="most-popular">😂</div>
+                    <div class="stat-label">Most Popular</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="growth-rate">0%</div>
+                    <div class="stat-label">Annual Growth</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Historical Context</h2>
+            <div class="context-box" id="context-box">
+                <p>Drag the timeline above to explore how emoji usage evolved over time.</p>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <h2>Usage Trends</h2>
+            <canvas id="trend-chart"></canvas>
+        </section>
+
+        <footer>
+            <p>Data simulated for educational purposes. Inspired by neal.fun</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
